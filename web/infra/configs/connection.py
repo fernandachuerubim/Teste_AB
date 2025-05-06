@@ -8,6 +8,7 @@ class DBConnectionHandler:
     def __init__(self):
         url = os.getenv('DATABASE_URL')
         self.__connection_string = url
+        self.__engine = self.__create_database_engine()
         self.session = None
 
     def __create_database_engine(self):
