@@ -2,7 +2,7 @@ FROM python:3.12-slim as final
 
 WORKDIR /app
 
-ARG CHROME_VERSION="136.0.7103.59-1"
+ARG CHROME_VERSION="126.0.6478.182-1"
 
 COPY ./webscraper /app/
 
